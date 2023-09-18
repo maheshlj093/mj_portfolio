@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahesh's Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="Assets/css/style.css" rel="stylesheet">
+</head>
+<body ng-app="myProfileApp" ng-controller="myProfileCtrl">
+    <div class="container-fluid navbar-fixed">
+        <nav class="blue-grey lighten-1">
+            <div class="nav-wrapper">
+              <a href="" class="brand-logo white-text" ng-click="showHomeDiv()">Port<span class="red-text">f</span>olio</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down submenu">
+                <li class=""><a href="" ng-click="showHomeDiv()">Home</a></li>
+                <li><a href="" ng-click="showAboutDiv()">About</a></li>
+                <li><a href="" ng-click="showProjectsDiv()">Projects</a></li>
+                
+              </ul>
+              <ul class="side-nav submenu" id="mobile-demo">
+                <li class=""><a href="" ng-click="showHomeDiv()">Home</a></li>
+                <li><a href="" ng-click="showAboutDiv()">About</a></li>
+                <li><a href="" ng-click="showProjectsDiv()">Projects</a></li>
+                
+              </ul>
+            </div>
+          </nav>
+    </div>
+    <div id="home" class="parallax-container valign-wrapper" ng-show="showhome">
+        <div class="section">
+          <div class="container valign">
+            <br><br>
+            <h1 class="center white-text text-darken-2">Wel<span class="orange-text">c</span>ome</h1>
+            <div class="row center">
+              <h5 class="col s12 white-text text-darken-2">I'm <b>Mahesh</b>, a <b>Software Engineer</b> with 1.6 years of experience. My expertise spans PHP, HTML, CSS, JavaScript, AngularJS 1.0, AJAX, API creation, jQuery, MySQL, Bootstrap, and Materialize CSS. I'm passionate about crafting dynamic web solutions and creating seamless user experiences. Let's build something amazing together!</h5>
+            </div>
+            <div class="row center">
+              <a href="" class="btn-floating btn-large waves-effect waves-light orange lighter-5" ng-click="showAboutDiv()"><i class="large material-icons">arrow_drop_down</i></a>
+            </div>
+            <br><br>
+          </div>
+        </div>
+        <div class="parallax"><img src="Assets/Images/bg.jpg" alt="background image"></div>
+    </div>
+
+    <div id="about" ng-show="showAbout">
+        <div class="section">
+          <div class="container">
+            <h1 class="black-text text-darken-2 center">About</h1>
+            <div class="row">
+              <div class="col s12 black-text text-darken-2">
+                <p class="center-align">Hello, I'm Mahesh, a passionate and driven software engineer with 1.6 years of hands-on experience in the ever-evolving world of web development. I thrive on turning ideas into innovative solutions and crafting digital experiences that leave a lasting impact.</p>
+                    <br>
+                    <b class="header">My Expertise</b><br><br>
+                    
+                    <span class="sub_header">Languages:</span> PHP, HTML, CSS, JavaScript<br>
+                    <span class="sub_header">Frameworks:</span> AngularJS 1.0, jQuery<br>
+                    <span class="sub_header">Frontend:</span> HTML5, CSS3, Bootstrap, Materialize CSS<br>
+                    <span class="sub_header">Backend:</span> PHP, MySQL<br>
+                    <span class="sub_header">Web Technologies:</span> AJAX, API Creation<br>
+                    <br>
+                    <b class="header">What I Do</b><br><br>
+                    
+                    I'm currently working with a focus on:<br>
+                    
+                    <span class="sub_header">PHP:</span> Building robust server-side applications and dynamic websites.<br>
+                    <span class="sub_header">HTML, CSS, and JavaScript:</span> Crafting responsive and user-friendly frontend interfaces.<br>
+                    <span class="sub_header">AngularJS 1.0:</span> Creating dynamic and data-driven web applications.<br>
+                    <span class="sub_header">jQuery:</span> Enhancing user interactions and functionality.<br>
+                    <span class="sub_header">MySQL:</span> Designing efficient databases to store and retrieve data.<br>
+                    <span class="sub_header">Bootstrap and Materialize CSS:</span> Ensuring sleek and modern UI/UX.<br>
+                    <span class="sub_header">API Creation:</span> Developing APIs for seamless data exchange.<br>
+                    <span class="sub_header">AJAX:</span> Enabling asynchronous communication for a smoother user experience.<br>
+                    <br>
+                    <b class="header">Why Me?</b><br><br>
+                    
+                    With my passion for coding, attention to detail, and commitment to staying up-to-date with the latest trends and technologies, I am dedicated to delivering high-quality solutions that exceed expectations. Whether it's building a responsive website, optimizing database performance, or creating a seamless user experience, I'm always up for the challenge.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+
+    <div id="projects" ng-show="showProjects">
+        <div class="section">
+          <div class="container">
+            <h1 class="black-text text-darken-2 center">Projects</h1>
+            <div class="row">
+                <div class="col s12 center">
+                    <ul>
+                        <li class="teal"><a href="https://techsparsha.in/dev/CiMi" class="white-text text-darken-2">CiMi</a></li>
+                        <li class="blue"><a href="https://techsparsha.in/dev/CiMi/field" class="white-text text-darken-2">Smart EMS</a></li>
+                        <li class="red"><a href="https://techsparsha.in/dev/MCC/" class="white-text text-darken-2">MCC</a></li>
+                        <li class="indigo"><a href="https://techsparsha.in/dev/dkp/" class="white-text text-darken-2">DKP</a></li>
+                        <li class="orange"><a href="https://techsparsha.in/dev/SVE/" class="white-text text-darken-2">SolveEasy</a></li>
+                        <li class="green"><a href="https://techsparsha.in/dev/bml/" class="white-text text-darken-2">BookMyLearn</a></li>
+                        <li class="purple"><a href="https://techsparsha.in/dev/TS/TechSparsha3/" class="white-text text-darken-2">TECHSPARSHA</a></li>
+                        <li class="pink"><a href="https://techsparsha.in/dev/ASDsite/" class="white-text text-darken-2">ASD</a></li>
+                      </ul>
+
+                </div>
+
+            </div>
+          </div>
+        </div>
+        
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="Assets/Js/script.js"></script>
+</body>
+</html>
